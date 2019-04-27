@@ -146,7 +146,7 @@ module conv_1(
                             if(circle == 0)
                             begin
                                 bias_weights_bram_ena <= 1'b1;
-                                bias_weights_bram_addra <= conv1_weights_base + count;
+                                bias_weights_bram_addra <= conv1_weights_base +filter * `CONV1_OUTPUT * `CONV1_OUTPUT+ count;
                                 circle <= circle + 1;
                             end
                             else if(circle == 3)
