@@ -239,7 +239,7 @@ module fc_2(
                         begin
                             result_bram_ena <= 1'b1;
                             result_bram_wea <= 1'b1;
-                            result_bram_addra <= fc1_result_base + row;
+                            result_bram_addra <= fc2_result_base + row;
                             result_bram_dina <= result;
                             circle <= circle + 1;
                         end
